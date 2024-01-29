@@ -26,11 +26,11 @@ Explore el conjunto de datos sobre vinos proporcionado para descubrir patrones, 
 
 Cada parte esta separada en jupyter notbooks.
 
-### [`EDA` (Exploratory Data Analysis)]()
+### [`EDA` (Exploratory Data Analysis)](https://github.com/DamianAlbarino/Challenge-Wine/blob/main/EDA.ipynb)
 
-### [`Clustering Analysis`]()
+### [`Clustering Analysis`](https://github.com/DamianAlbarino/Challenge-Wine/blob/main/Clustering-Analysis.ipynb)
 
-### [`Creative Insights and Storytelling`]()
+### [`Creative Insights and Storytelling`](https://github.com/DamianAlbarino/Challenge-Wine/blob/main/Creative_Insights_and_Storytelling.ipynb)
 
 ## Contacto
 - Correo Electrónico: [damianalbarino@hotmail.com](mailto:damianalbarino@hotmail.com)
