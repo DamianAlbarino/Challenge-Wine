@@ -4,11 +4,9 @@ import requests
 
 # Abrir csv
 
-url = 'https://storage.googleapis.com/the_public_bucket/wine-clustering.csv'
+url = "https://challenge-wine.onrender.com/dataframe/"
 
-getDataFrame = f"https://challenge-wine.onrender.com/getDataFrame/{url}"
-
-response = requests.get(getDataFrame)
+response = requests.get(url)
 
 if response.status_code == 200:
     # La solicitud fue exitosa, puedes acceder a los datos en formato JSON
