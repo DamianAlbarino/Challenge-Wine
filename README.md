@@ -33,9 +33,34 @@ Cada parte esta separada en jupyter notbooks.
 
 ### [`Creative Insights and Storytelling`](https://github.com/DamianAlbarino/Challenge-Wine/blob/main/Creative_Insights_and_Storytelling.ipynb)
 
-## Extras
+## Tareas opcionales
 
+### `Containerization and Data Retrieval`
+
+#### Docker
+En el dockerfile se acopló todo el clustering analysis, donde se cargan los datos pedidos a la API, y se muestra la cantidad optima de clusters para el dataframe ingresado, el dataframe con los tipos de vino definidos (0,1,2) y la cantidad de cada tipo.
+
+##### Paso a paso para ejecutar el contenedor
+1. Asegurate de tener docker instalado.
+2. Posicionate en la carpeta docker
+  ```sh
+  cd docker/
+  ```
+3. Contruye la imagen docker:
+  ```sh
+  docker build -t wineimage .
+  ```
+4. Ejecuta el contenedor:
+  ```sh
+  docker run -it wineimage
+  ```
+  Esto iniciará tu aplicación dentro del contenedor.
+
+#### API
 Se genero con Fast Api, una api que devuelve el json del csv. El codigo se encuentra en la carpeta [`api`](https://github.com/DamianAlbarino/Challenge-Wine/tree/main/api) junto con los requirements para su funcionamiento, estos estan separados ya que requieren menos librerias y para optimizar un poco la carga en Render, donde se hizo el deploy.
+
+En la API podemos ver que hay un GET:
+* `/getDataFrame/{url}`: Esto nos permite ingresar un url con la mismas caracteristicas del proporcionado, en el cual devuelva un csv. Esto facilita la posibilidad de probar el contendor de docker para poder utilizarlo con otros ejemplos.
 
 Deploy: [Link](https://challenge-wine.onrender.com/docs)
 

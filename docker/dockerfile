@@ -1,0 +1,10 @@
+FROM python:3.11
+
+COPY . /app
+
+WORKDIR /app
+
+RUN pip install -r requirements-docker.txt
+
+# Comando para ejecutar tu aplicación
+CMD ["python", "script.py"]
